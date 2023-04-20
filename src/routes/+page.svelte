@@ -1,2 +1,50 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script>
+	import Hero from '../lib/components/Hero.svelte';
+	import {fly} from 'svelte/transition'
+
+</script>
+<div in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500, delay: 500 }}>
+<Hero />
+</div>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+	/* Fluid font size variables, for browsers that support clamp */
+	@supports (font-size: clamp(1rem, 1vw, 1rem)) {
+		:root {
+			--font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+			--font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+			--font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+			--font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+			--font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+			--font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+			--font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+		}
+	}
+	/* Fallback variables for browsers that don't support clamp */
+	@supports not (font-size: clamp(1rem, 1vw, 1rem)) {
+		:root {
+			--font-size-sm: 0.8rem;
+			--font-size-base: 1rem;
+			--font-size-md: 1.25rem;
+			--font-size-lg: 1.56rem;
+			--font-size-xl: 1.95rem;
+			--font-size-xxl: 2.44rem;
+			--font-size-xxxl: 3.05rem;
+		}
+		@media screen and (min-width: 1280px) {
+			:root {
+				--font-size-sm: 0.89rem;
+				--font-size-base: 1.19rem;
+				--font-size-md: 1.58rem;
+				--font-size-lg: 2.11rem;
+				--font-size-xl: 2.81rem;
+				--font-size-xxl: 3.75rem;
+				--font-size-xxxl: 5rem;
+			}
+		}
+	}
+	:root {
+		--nav-footer: #202020;
+	}
+</style>
