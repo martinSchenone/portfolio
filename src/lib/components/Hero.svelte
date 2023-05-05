@@ -1,7 +1,8 @@
 <section id="home">
   <div class="hero-container">
-    <h1>Hello,I'm Martin.</h1>
-    <h2>A Frontend Developer</h2>
+    <h1>Hi!</h1>
+    <h2 id="title_name">I'm Martin Schenone.</h2>
+    <h2>A Front End Developer</h2>
     <p>I'm interested in the development and improvement of websites, with a minimalist design perspective.</p>
     <span><a style="all:unset" href="/projects">PROJECTS</a></span>
   </div>
@@ -23,6 +24,10 @@
   h1{
     font-weight: bold;
     font-size: var(--font-size-lg);
+  }
+  #title_name{
+    font-weight: 500;
+    font-size: var(--font-size-md);
   }
   h2{
     font-weight: 300;

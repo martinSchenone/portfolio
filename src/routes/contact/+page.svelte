@@ -65,12 +65,17 @@
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
 				alt="logo"
 			/>
-      <span>SVELTE</span>
+      <span>SVELTEKIT</span>
+		</div>
+		<div class="icon-container">
+			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" 
+			alt="logo"/>
+
+      <span>TAILWIND</span>
 		</div>
 	</div>
 </section>
 
-<!-- todo:poner una foto mia en el contact -->
 <style>
 	section {
 		width: 90%;
