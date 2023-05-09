@@ -1,5 +1,4 @@
 <script>
-	const profilePic = '/photo3.png/';
 	import { fly } from 'svelte/transition';
 </script>
 
@@ -10,7 +9,7 @@
 >
 	<div class="container">
 		<div class="yo-img">
-			<img src={profilePic} alt="profilePhoto" />
+			<img src='./photo3.png' alt="profilePhoto" />
 		</div>
 		<div class="about-me">
 			<p>
