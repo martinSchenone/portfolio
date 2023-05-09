@@ -9,7 +9,7 @@
 >
 	<div class="container">
 		<div class="yo-img">
-			<img src='./photo3.png' alt="profilePhoto" />
+			<img src="./photo3.png" alt="profilePhoto" />
 		</div>
 		<div class="about-me">
 			<p>
@@ -29,49 +29,53 @@
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
 				alt="logo"
 			/>
-      <span>HTML</span>
+			<span>HTML</span>
 		</div>
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
 				alt="logo"
 			/>
-      <span>CSS</span>
+			<span>CSS</span>
 		</div>
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
 				alt="logo"
 			/>
-      <span>BOOTSTRAP</span>
+			<span>BOOTSTRAP</span>
 		</div>
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
 				alt="logo"
 			/>
-      <span>JAVASCRIPT</span>
+			<span>JAVASCRIPT</span>
 		</div>
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
 				alt="logo"
 			/>
-      <span>NODE JS</span>
+			<span>NODE JS</span>
 		</div>
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
 				alt="logo"
 			/>
-      <span>SVELTEKIT</span>
+			<span>SVELTEKIT</span>
 		</div>
 		<div class="icon-container">
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" 
-			alt="logo"/>
-
-      <span>TAILWIND</span>
+			<img
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+				alt="logo"
+			/>
+			<span>TAILWIND</span>
 		</div>
+	</div>
+	<div class="cv">
+		<button type="button"><a href="./cv.pdf" download>Download CV</a></button>
 	</div>
 </section>
 
@@ -122,19 +126,19 @@
 		gap: 1rem 2rem;
 		margin-top: 5rem;
 	}
-  .icon-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .icon-container > span{
-    visibility: hidden;
-    opacity: 0;
-    transition: all 500ms linear;
-    font-weight: bold;
-    transform: scale(0);
-  }
+	.icon-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.icon-container > span {
+		visibility: hidden;
+		opacity: 0;
+		transition: all 500ms linear;
+		font-weight: bold;
+		transform: scale(0);
+	}
 	.icons > .icon-container > img {
 		margin: 1rem 1rem;
 		transition: all 250ms linear;
@@ -145,10 +149,39 @@
 	.icons > .icon-container > img:hover {
 		transform: scale(1.05);
 	}
-  .icon-container:hover span{
-    transform: scale(1);
-    visibility: visible;
-    opacity: 1;
+	.icon-container:hover span {
+		transform: scale(1);
+		visibility: visible;
+		opacity: 1;
+	}
+	.cv{
+		margin-top: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.cv > button{
+    padding: 1rem; 
+    color: #202020;
+    background-color: inherit;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
+    -moz-box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
+    box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
+    font-weight: lighter;
+    transition: all 500ms linear;
+	font-size: var(--font-size-base);
+	font-weight: 700;
+	}
+  .cv> button:hover{
+    background:rgb(51, 51, 51);
+    color: white;
+    transition: all 100ms;
+  }
+  a{
+	text-decoration: none;
+	color: #202020;
   }
 	@media all and (max-width: 650px) {
 		.container {
