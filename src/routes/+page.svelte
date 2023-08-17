@@ -1,10 +1,14 @@
 <script>
 	import Hero from '../lib/components/Hero.svelte';
 	import {fly} from 'svelte/transition'
+	import Projects from '../lib/components/Projects.svelte';
+	import Contact from '../lib/components/Contact.svelte';
 
 </script>
 <div in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ duration: 500, delay: 500 }}>
 <Hero />
+<Projects />
+<Contact />
 </div>
 
 <style>

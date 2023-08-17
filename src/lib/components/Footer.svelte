@@ -28,8 +28,6 @@
 	</div>
 </footer>
 
-<!-- todo: cambiar los id de referencia hacia las rutas nuevas que tengo que crear -->
-<!-- todo:crear animacion cuando le damos hover a los enlaces de redes sociales para que aparezca su icono al lado con transition -->
 <style>
 	footer {
 		margin-top: 5rem;
@@ -47,8 +45,9 @@
 
 	.contactMe {
 		display: flex;
-		justify-content: center;
+		justify-content:center;
 		align-items: center;
+		gap: 0.5rem;
 	}
 	
 	a {
@@ -59,9 +58,10 @@
 		text-decoration: none;
 		transition: all 200ms linear;
 		margin: 0rem 0.3rem;
+		text-align: center;
 	}
 	.icon {
-		padding: 0rem 0.5rem;
+		font-size: 1.5rem;
 	}
 	.contact1:hover {
 		background: #999999;

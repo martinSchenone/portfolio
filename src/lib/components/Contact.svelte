@@ -1,25 +1,20 @@
-<script>
-	import { fly } from 'svelte/transition';
-</script>
-
-<section
-	id="about"
-	in:fly={{ y: 50, duration: 500, delay: 500 }}
-	out:fly={{ duration: 500, delay: 500 }}
->
+<section id="contact">
+	<div class="about_me_title">
+		<h1>About Me</h1>
+	</div>
 	<div class="container">
 		<div class="yo-img">
 			<img src="./photo3.png" alt="profilePhoto" />
 		</div>
 		<div class="about-me">
+			<p class="text">Hey, I'm Martin. Frontend developer</p>
+
 			<p>
-				Hey, I'm Martin. I'm Frontend developer
-				<br />
-				I am passionate about programming, I love finding new methods to solve problems that come my
+				Passionate about programming, I love finding new methods to solve the problems that come my
 				way.
-				<br />
-				These are the technologies that I use daily to program
 			</p>
+			These are the technologies that I use daily to develop
+			<p />
 		</div>
 	</div>
 
@@ -29,7 +24,7 @@
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
 				alt="logo"
 			/>
-			<span>HTML</span>
+			<span class="span">HTML</span>
 		</div>
 		<div class="icon-container">
 			<img
@@ -38,13 +33,7 @@
 			/>
 			<span>CSS</span>
 		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
-				alt="logo"
-			/>
-			<span>BOOTSTRAP</span>
-		</div>
+
 		<div class="icon-container">
 			<img
 				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
@@ -88,9 +77,15 @@
 		max-width: 1200px;
 		margin-inline: auto;
 	}
+	.about_me_title {
+		text-align: center;
+		font-size: var(--font-size-lg);
+		letter-spacing: -2px;
+	}
 	.container {
 		width: 100%;
 		display: flex;
+		margin-top: 5rem;
 	}
 	.yo-img {
 		display: flex;
@@ -107,82 +102,117 @@
 
 	.about-me {
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		text-align: center;
 		font-size: var(--font-size-base);
 		font-weight: 500;
-		letter-spacing: 0.1rem;
-		word-spacing: 0.1rem;
+		letter-spacing: 0.15px;
+		line-height: 1.3;
 		padding-bottom: 2rem;
 	}
 	.about-me > p {
 		padding: 0rem 2.5rem;
 	}
+
 	.icons {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-		gap: 1rem 2rem;
 		margin-top: 5rem;
+		gap: 3rem;
+		padding: 0.5rem;
 	}
 	.icon-container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		position: relative;
 		align-items: center;
 	}
 	.icon-container > span {
-		visibility: hidden;
 		opacity: 0;
-		transition: all 500ms linear;
+		visibility: hidden;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: all 250ms 100ms linear;
 		font-weight: bold;
-		transform: scale(0);
+		transform: scale(1);
+		letter-spacing: -2px;
+		position: absolute;
+		font-size: 2rem;
+		text-align: center;
+		z-index: 0;
 	}
 	.icons > .icon-container > img {
-		margin: 1rem 1rem;
 		transition: all 250ms linear;
 		overflow: hidden;
 		padding: 1rem;
-		border-radius: 1rem;
+		height: 100%;
+		cursor: pointer;
 	}
 	.icons > .icon-container > img:hover {
-		transform: scale(1.05);
+		transform: scale(105%);
+		opacity: 10%;
+	}
+	img {
+		width: 100%;
+		height: 100%;
+		z-index: 10;
 	}
 	.icon-container:hover span {
 		transform: scale(1);
 		visibility: visible;
 		opacity: 1;
 	}
-	.cv{
-		margin-top: 3rem;
+	.cv {
+		margin-top: 7rem;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	.cv > button{
-    padding: 1rem; 
-    color: #202020;
-    background-color: inherit;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
-    -webkit-box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
-    -moz-box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
-    box-shadow: 0px 0px 24px 11px rgba(80, 80, 80, 0.42);
-    font-weight: lighter;
-    transition: all 500ms linear;
-	font-size: var(--font-size-base);
-	font-weight: 700;
+	.cv > button {
+		border: none;
+		padding: 0.9rem 0rem;
+		color: #252525;
+		cursor: pointer;
+		background: #c9d6ff;
+		background: -webkit-linear-gradient(to bottom, #e2e2e2, #c9d6ff);
+		background: linear-gradient(to bottom, #e2e2e2, #c9d6ff);
+		-webkit-box-shadow: 0px 0px 20px 3px rgba(80, 80, 80, 0.42);
+		-moz-box-shadow: 0px 0px 20px 3px rgba(80, 80, 80, 0.42);
+		box-shadow: 0px 0px 20px 3px rgba(80, 80, 80, 0.42);
+		font-weight: lighter;
+		transition: all 500ms linear;
+		font-size: var(--font-size-base);
+		font-weight: 500;
+		opacity: 0.7;
 	}
-  .cv> button:hover{
-    background:rgb(51, 51, 51);
-    color: white;
-    transition: all 100ms;
-  }
-  a{
-	text-decoration: none;
-	color: #202020;
-  }
+	a {
+		padding: 0.9rem;
+	}
+	.cv > button:hover
+	 {
+		opacity: 1;
+	}
+	.cv > button:active{
+		scale: 95%;
+	}
+	a {
+		letter-spacing: -0.15px;
+		text-decoration: none;
+		font-weight: 700;
+		color: #252525;
+		transition: all 500ms linear;
+		
+
+
+	}
+
 	@media all and (max-width: 650px) {
 		.container {
 			flex-direction: column;

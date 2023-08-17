@@ -3,11 +3,8 @@
 	import Nav from '../lib/components/Nav.svelte';
 </script>
 
-<title>Martin schenone</title>
+<title>MS / Portfolio</title>
 
-
-
-	<Nav />
-	<slot >
-	</slot>
-	<Footer />
+<Nav />
+<slot />
+<Footer />
