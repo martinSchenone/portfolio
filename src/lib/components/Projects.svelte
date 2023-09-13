@@ -5,6 +5,17 @@
 	</div>
 	<div class="projectCard">
 		<div class="cardText">
+			<h1 class="cardTitle">Bufalo Burgers</h1>
+			<p class="cardDescription">Website for a hamburger restaurant, with the intention of attracting customers, showing a service and reaching new areas and/or people.</p>
+			<div class="view-project">
+				<button>
+					<a href="https://bufaloburgers.netlify.app" target="_blank"> View project </a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="projectCard">
+		<div class="cardText">
 			<h1 class="cardTitle">AnimeX</h1>
 			<p class="cardDescription">Anime site created with sveltekit using Jikan API.</p>
 			<div class="view-project">
@@ -36,6 +47,7 @@
 			</div>
 		</div>
 	</div>
+	
 </section>
 
 <style>

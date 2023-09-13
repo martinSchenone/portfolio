@@ -35,7 +35,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		font-size: var(--font-size-xl);
+		font-size: var(--font-size-md);
 	}
 	h1 {
 		margin-bottom: 0;
@@ -88,9 +88,16 @@ background: linear-gradient(to bottom, #E2E2E2, #C9D6FF); /* W3C, IE 10+/ Edge, 
 	.projects > button:active {
 		scale: 95%;
 	}
-	@media all and (max-width: 424px) {
-		.name_surname {
-			font-size: var(--font-size-md);
+	@media all and (min-width: 568px) {
+		.name_surname{
+			font-size: var(--font-size-lg);
 		}
+		
+	}
+	@media all and (min-width: 720px) {
+		.name_surname{
+			font-size: var(--font-size-xl);
+		}
+		
 	}
 </style>

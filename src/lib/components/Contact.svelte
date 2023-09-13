@@ -64,7 +64,7 @@
 		</div>
 	</div>
 	<div class="cv">
-		<button type="button"><a href="./cv.pdf" download>Download CV</a></button>
+		<button type="button"><a href="./cvNew.pdf" download>Download CV</a></button>
 	</div>
 </section>
 
