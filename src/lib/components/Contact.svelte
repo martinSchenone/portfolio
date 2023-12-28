@@ -62,9 +62,16 @@
 			/>
 			<span>TAILWIND</span>
 		</div>
+		<div class="icon-container">
+			<img
+				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+				alt="logo"
+			/>
+			<span>REACT</span>
+		</div>
 	</div>
 	<div class="cv">
-		<button type="button"><a href="./Curriculum29-9-23.pdf" download>Download CV</a></button>
+		<button type="button"><a href="./cv12-12.pdf" download>Download CV</a></button>
 	</div>
 </section>
 
@@ -195,11 +202,10 @@
 	a {
 		padding: 0.9rem;
 	}
-	.cv > button:hover
-	 {
+	.cv > button:hover {
 		opacity: 1;
 	}
-	.cv > button:active{
+	.cv > button:active {
 		scale: 95%;
 	}
 	a {
@@ -208,9 +214,6 @@
 		font-weight: 700;
 		color: #252525;
 		transition: all 500ms linear;
-		
-
-
 	}
 
 	@media all and (max-width: 650px) {
