@@ -17,6 +17,7 @@
 		justify-content: center;
 		max-width: 1200px;
 		margin-inline: auto;
+		z-index: 100;
 	}
 	.nav {
 	}
@@ -37,6 +38,7 @@
 		text-decoration: none;
 		color: var(--nav-footer);
 		transition: color 200ms linear;
+		cursor: pointer;
 	}
 	nav ul li::after{
 		content: "";
