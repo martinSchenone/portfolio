@@ -1,15 +1,18 @@
-<header>
-	<nav class="nav">
-		<ul class="nav-list">
-			<li><a href="#home">Home</a></li>
-			<li><a href="#projectos">Projects</a></li>
-			<li><a href="#contact">About me</a></li>
-		</ul>
-	</nav>
-</header>
+<div class="fixed">
+	<header>
+		<nav class="nav">
+			<ul class="nav-list">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#projectos">Projects</a></li>
+				<li><a href="#contact">About me</a></li>
+			</ul>
+		</nav>
+	</header>
+</div>
 
 <style>
 	header {
+		position: sticky;
 		border-bottom: 1.5px solid #bababa;
 		width: 90%;
 		display: flex;
@@ -18,10 +21,11 @@
 		max-width: 1200px;
 		margin-inline: auto;
 		z-index: 100;
+		top: 0;
 	}
-	.nav {
-	}
+
 	.nav-list {
+		position: sticky;
 		width: 100%;
 		display: flex;
 		list-style-type: none;
@@ -30,7 +34,7 @@
 		text-align: center;
 	}
 	li {
-		padding-inline:calc(var(--_gap)/2);
+		padding-inline: calc(var(--_gap) / 2);
 		transition: all 200ms linear;
 		position: relative;
 	}
@@ -40,21 +44,21 @@
 		transition: color 200ms linear;
 		cursor: pointer;
 	}
-	nav ul li::after{
-		content: "";
+	nav ul li::after {
+		content: '';
 		position: absolute;
 		height: 2px;
 		background-color: #303030;
-		width:100%;
+		width: 100%;
 		bottom: -0.5rem;
 		left: 0;
 		scale: 0 1;
 		transition: 250ms all;
 	}
-	li:hover::after{
+	li:hover::after {
 		scale: 1 1;
 	}
-	
+
 	/* li:hover {
 		background-color: #999999;
 	}

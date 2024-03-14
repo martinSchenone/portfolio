@@ -1,3 +1,43 @@
+<script>
+	const logoData = [
+		{
+			title: 'HTML',
+			imageSource: './htmlLogo.svg',
+			alt: 'HTML logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'CSS',
+			imageSource: './cssLogo.svg',
+			alt: 'CSS logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'JAVASCRIPT',
+			imageSource: './javascriptLogo.svg',
+			alt: 'JAVASCRIPT logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'NODEJS',
+			imageSource: './nodejsLogo.svg',
+			alt: 'NODEJS logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'SVELTE',
+			imageSource: './svelteLogo.svg',
+			alt: 'SVELTE logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'TAILWIND',
+			imageSource: './tailwindLogo.svg',
+			alt: 'TAILWIND logo from https://www.svgrepo.com'
+		},
+		{
+			title: 'REACT',
+			imageSource: './reactLogo.svg',
+			alt: 'REACT logo from https://www.svgrepo.com'
+		}
+	];
+</script>
+
 <section id="contact">
 	<div class="about_me_title">
 		<h1>About Me</h1>
@@ -17,61 +57,17 @@
 			<p />
 		</div>
 	</div>
-
 	<div class="icons">
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
-				alt="logo"
-			/>
-			<span class="span">HTML</span>
-		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-				alt="logo"
-			/>
-			<span>CSS</span>
-		</div>
-
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-				alt="logo"
-			/>
-			<span>JAVASCRIPT</span>
-		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-				alt="logo"
-			/>
-			<span>NODE JS</span>
-		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
-				alt="logo"
-			/>
-			<span>SVELTEKIT</span>
-		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
-				alt="logo"
-			/>
-			<span>TAILWIND</span>
-		</div>
-		<div class="icon-container">
-			<img
-				src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-				alt="logo"
-			/>
-			<span>REACT</span>
-		</div>
+		{#each logoData as data}
+			<div class="icon-container">
+				<img src={data.imageSource} alt={data.alt} />
+				<span class="span">{data.title}</span>
+			</div>
+		{/each}
 	</div>
+
 	<div class="cv">
-		<button type="button"><a href="./cv12-12.pdf" download>Download CV</a></button>
+		<button type="button"><a href="./cv.pdf" download>Download CV</a></button>
 	</div>
 </section>
 
