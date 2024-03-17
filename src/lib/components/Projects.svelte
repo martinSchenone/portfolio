@@ -1,3 +1,11 @@
+<script>
+	const projectsMap = [
+		{
+			cardTitle:"",
+			cardDescription:"",
+		}
+]
+</script>
 <section class="projects" id="projectos">
 	<div class="section-info">
 		<h1 class="section-title">Projects</h1>
