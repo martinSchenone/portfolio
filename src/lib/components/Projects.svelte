@@ -1,76 +1,51 @@
 <script>
 	const projectsMap = [
 		{
-			cardTitle:"",
-			cardDescription:"",
+			cardTitle: 'ECOMMERCE' || '',
+			cardDescription: 'Clothing website, with local storage and more.' || ''
+		},
+		{
+			cardTitle: 'Bufalo Burgers' || '',
+			cardDescription:
+				'Website for a hamburger restaurant, with the intention of attracting customers, showing a service and reaching new areas and/or people.' ||
+				''
+		},
+		{
+			cardTitle: 'AnimeX' || '',
+			cardDescription: 'Anime site created with sveltekit using Jikan API.' || ''
+		},
+		{
+			cardTitle: 'World Search' || '',
+			cardDescription: 'World search Frontend mentor challenge,created with svelte.' || ''
+		},
+		{
+			cardTitle: 'Rick and morty' || '',
+			cardDescription: 'Website consuming rick and morty API.' || ''
 		}
-]
+	];
 </script>
+
 <section class="projects" id="projectos">
 	<div class="section-info">
 		<h1 class="section-title">Projects</h1>
 		<p>Here Are Some Things I’ve Built</p>
 	</div>
-	<div class="projectCard">
-		<div class="cardText">
-			<h1 class="cardTitle">ECOMMERCE</h1>
-			<p class="cardDescription">Clothing website, with local storage and more.</p>
-			<div class="view-project">
-				<button>
-					<a href="https://msecommerce.netlify.app" target="_blank"> View project </a>
-				</button>
+	{#each projectsMap as project}
+		<div class="projectCard">
+			<div class="cardText">
+				<h1 class="cardTitle">{project.cardTitle}</h1>
+				<p class="cardDescription">{project.cardDescription}</p>
+				<div class="view-project">
+					<button>
+						<a href="https://msecommerce.netlify.app" target="_blank"> View project </a>
+					</button>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="projectCard">
-		<div class="cardText">
-			<h1 class="cardTitle">Bufalo Burgers</h1>
-			<p class="cardDescription">Website for a hamburger restaurant, with the intention of attracting customers, showing a service and reaching new areas and/or people.</p>
-			<div class="view-project">
-				<button>
-					<a href="https://bufaloburgers.netlify.app" target="_blank"> View project </a>
-				</button>
-			</div>
-		</div>
-	</div>
-	<div class="projectCard">
-		<div class="cardText">
-			<h1 class="cardTitle">AnimeX</h1>
-			<p class="cardDescription">Anime site created with sveltekit using Jikan API.</p>
-			<div class="view-project">
-				<button>
-					<a href="https://my-anime-app.netlify.app/anime" target="_blank"> View project </a>
-				</button>
-			</div>
-		</div>
-	</div>
-	<div class="projectCard">
-		<div class="cardText">
-			<h1 class="cardTitle">World Search</h1>
-			<p class="cardDescription">World search Frontend mentor challenge,created with svelte.</p>
-			<div class="view-project">
-				<button
-					><a href="https://worldsearchapp.netlify.app" target="_blank">View Project</a></button
-				>
-			</div>
-		</div>
-	</div>
-	<div class="projectCard">
-		<div class="cardText">
-			<h1 class="cardTitle">Rick and morty</h1>
-			<p class="cardDescription">Website consuming rick and morty API</p>
-			<div class="view-project">
-				<button>
-					<a href="https://rickmorty-universe.netlify.app" target="_blank"> View project </a>
-				</button>
-			</div>
-		</div>
-	</div>
-	
+	{/each}
 </section>
 
 <style>
-	
 	.projects {
 		margin: 5rem 0rem;
 		width: 90%;
