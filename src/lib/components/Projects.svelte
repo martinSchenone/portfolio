@@ -2,25 +2,30 @@
 	const projectsMap = [
 		{
 			cardTitle: 'ECOMMERCE' || '',
-			cardDescription: 'Clothing website, with local storage and more.' || ''
+			cardDescription: 'Clothing website, with local storage and more.' || '',
+			href:"https://msecommerce.netlify.app"
 		},
 		{
 			cardTitle: 'Bufalo Burgers' || '',
 			cardDescription:
 				'Website for a hamburger restaurant, with the intention of attracting customers, showing a service and reaching new areas and/or people.' ||
-				''
+				'',
+				href:"https://bufaloburgers.netlify.app"
 		},
 		{
 			cardTitle: 'AnimeX' || '',
-			cardDescription: 'Anime site created with sveltekit using Jikan API.' || ''
+			cardDescription: 'Anime site created with sveltekit using Jikan API.' || '',
+			href:"https://my-anime-app.netlify.app"
 		},
 		{
 			cardTitle: 'World Search' || '',
-			cardDescription: 'World search Frontend mentor challenge,created with svelte.' || ''
+			cardDescription: 'World search Frontend mentor challenge,created with svelte.' || '',
+			href:"https://worldsearchapp.netlify.app"
 		},
 		{
 			cardTitle: 'Rick and morty' || '',
-			cardDescription: 'Website consuming rick and morty API.' || ''
+			cardDescription: 'Website consuming rick and morty API.' || '',
+			href:"https://rickmorty-universe.netlify.app"
 		}
 	];
 </script>
@@ -37,7 +42,7 @@
 				<p class="cardDescription">{project.cardDescription}</p>
 				<div class="view-project">
 					<button>
-						<a href="https://msecommerce.netlify.app" target="_blank"> View project </a>
+						<a href={project.href} target="_blank"> View project </a>
 					</button>
 				</div>
 			</div>
@@ -78,13 +83,14 @@
 		font-size: var(--font-size-lg);
 	}
 	.cardText {
-		font-size: var(--font-size-base);
+		font-size: var(--font-size-sm);
 		letter-spacing: 1.15px;
 		line-height: 1.4;
+		font-weight: 600;
 	}
 
 	.cardDescription {
-		font-weight: 400;
+		font-weight: 600;
 	}
 	.view-project > button,
 	a {

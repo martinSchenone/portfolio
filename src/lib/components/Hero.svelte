@@ -2,13 +2,13 @@
 	<div class="hero-container">
 		<div class="name_surname">
 			<h1 id="title_name">Martin Schenone</h1>
-			<p id="description">Front End Developer</p>
+			<h2 id="description">Front End Developer</h2>
 		</div>
 		<div class="interests">
-			<h4>
+			<h3>
 				Interested in the development and focused on improvement of websites, design with a
 				minimalist style.
-			</h4>
+			</h3>
 		</div>
 		<div class="projects">
 			<button class=""><a style="all:unset" href="#projectos">PROJECTS</a></button>

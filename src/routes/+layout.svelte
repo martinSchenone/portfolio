@@ -3,7 +3,7 @@
 	import Nav from '../lib/components/Nav.svelte';
 </script>
 
-<title>MS / Portfolio</title>
+<title>Martin Schenone / Portfolio</title>
 
 <Nav />
 <slot />

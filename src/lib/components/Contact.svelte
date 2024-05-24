@@ -68,7 +68,7 @@
 
 	<div class="cv">
 		<button type="button" class="" id="btn"
-			><a href="./cvActualizado23-5-24.pdf" download>Download CV</a></button
+			><a href="./Curriculum.pdf" download>Download CV</a></button
 		>
 	</div>
 </section>
