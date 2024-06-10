@@ -1,7 +1,12 @@
 <script>
 	const projectsMap = [
 		{
-			cardTitle: 'ECOMMERCE' || '',
+			cardTitle: 'Alambrados Caru' || '',
+			cardDescription: 'Landing page for renowned factory in Mercedes.' || '',
+			href:"https://www.alambradoscaru.com"
+		},
+		{
+			cardTitle: 'Ecommerce' || '',
 			cardDescription: 'Clothing website, with local storage and more.' || '',
 			href:"https://msecommerce.netlify.app"
 		},
